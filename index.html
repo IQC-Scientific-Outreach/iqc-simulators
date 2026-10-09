@@ -189,7 +189,7 @@
   //    in the order you add them.
   //
   // FIELD NOTES
-  //   category    - Must be exactly one of: "qi", "physics", "games", "handson", "testing" (see the
+  //   category    - Must be exactly one of: "qi", "physics", "games", "handson", "testing", or "hidden" (hidden = not shown on the page at all; see the
   //                 CATEGORIES list just below for what each one is labelled on the
   //                 page). This controls which section the card appears in.
   //   name        - The activity's title, shown as the card heading.
@@ -227,6 +227,8 @@
     { key: "handson",  label: "Hands-on Activity Companions" },
     // Collapsible section, hidden by default. Keep it last so it appears at the bottom.
     { key: "testing",  label: "In Testing", collapsible: true }
+    // Note: category "hidden" is not listed here on purpose — simulators with
+    // category: "hidden" are never rendered (see the SIMULATORS array).
   ];
 
   var SIMULATORS = [
